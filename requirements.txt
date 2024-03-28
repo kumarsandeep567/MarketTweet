@@ -1,0 +1,4 @@
+tweepy
+yahoo_finance
+oauth2
+datetime
