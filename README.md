@@ -2,39 +2,15 @@
 
 This project, MarketTweet Analyzer, utilizes machine learning techniques to predict stock market trends, with a specific focus on analyzing Twitter data and employing Support Vector Machine (SVM) models for accurate predictions.
 
-## Installation
+## Setup Instructions:
 
-To install the necessary dependencies, run the following command:
+0: **Install required libraries:**
+
+To install the necessary libraries, run the following command:
 
 ```bash
 pip install -r requirements.txt
 ```
-
-## Important Note Regarding Twitter Data Collection
-
-Due to restrictions on collecting historical Twitter data, it is imperative to update certain parameters in the `DownloadTwitterData.py` file. Please follow these guidelines to ensure accurate data collection:
-
-1. **Update Current Date:**
-
-   In the `DownloadTwitterData.py` file, locate the line containing the initialization of the `TwitterData` object:
-
-   ```python
-   twitterData = get_twitter_data.TwitterData('DD-MM-YYYY')
-   ```
-
-   Replace `'DD-MM-YYYY'` with the current date. This ensures that the script collects Twitter corpus data for the past week from the specified date.
-
-2. **Adjust Date Range for Yahoo Finance Data:**
-
-   Similarly, in the same file, find the line initializing the `YahooData` object:
-
-   ```python
-   yahooData = get_yahoo_data.YahooData('DD-MM-YYYY', 'DD-MM-YYYY')
-   ```
-
-   Modify the date range parameters `'DD-MM-YYYY'` to match your desired date range for collecting historical Yahoo Finance data. This range should align with the Twitter data collection period to maintain coherence in the dataset.
-
-## Instructions to Execute
 
 1. **Twitter API Key:**
 
@@ -76,3 +52,27 @@ Due to restrictions on collecting historical Twitter data, it is imperative to u
 5. **Ensure Active Internet Connection:**
 
    Since the application predicts outcomes in real-time, ensure that you have an active internet connection throughout the execution process.
+
+## Important Note Regarding Twitter Data Collection
+
+Due to restrictions on collecting historical Twitter data, it is imperative to update certain parameters in the `DownloadTwitterData.py` file. Please follow these guidelines to ensure accurate data collection:
+
+1. **Update Current Date:**
+
+   In the `DownloadTwitterData.py` file, locate the line containing the initialization of the `TwitterData` object:
+
+   ```python
+   twitterData = get_twitter_data.TwitterData('DD-MM-YYYY')
+   ```
+
+   Replace `'DD-MM-YYYY'` with the current date. This ensures that the script collects Twitter corpus data for the past week from the specified date.
+
+2. **Adjust Date Range for Yahoo Finance Data:**
+
+   Similarly, in the same file, find the line initializing the `YahooData` object:
+
+   ```python
+   yahooData = get_yahoo_data.YahooData('DD-MM-YYYY', 'DD-MM-YYYY')
+   ```
+
+   Modify the date range parameters `'DD-MM-YYYY'` to match your desired date range for collecting historical Yahoo Finance data. This range should align with the Twitter data collection period to maintain coherence in the dataset.
