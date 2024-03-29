@@ -4,7 +4,7 @@ This project, MarketTweet Analyzer, utilizes machine learning techniques to pred
 
 ## Setup Instructions:
 
-0: **Install required libraries:**
+0. **Install required libraries:**
 
 To install the necessary libraries, run the following command:
 
