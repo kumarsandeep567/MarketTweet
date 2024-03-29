@@ -6,11 +6,11 @@ This project, MarketTweet Analyzer, utilizes machine learning techniques to pred
 
 0. **Install required libraries:**
 
-To install the necessary libraries, run the following command:
+   To install the necessary libraries, run the following command:
 
-```bash
-pip install -r requirements.txt
-```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 1. **Twitter API Key:**
 
